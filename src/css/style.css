@@ -1,0 +1,134 @@
+body{
+    background-color: var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card{
+    background-color: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    width: 420px;
+    border-radius: 25px;
+    padding: 30px;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.card .ico{
+    background-color: var(--btn-number);
+    background-image: url(../images/icon-star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card .title{
+    color: var(--title);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card .description{
+    line-height: 22px;
+}
+
+.card .classificacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .classificacao .valor{
+    background-color: var(--btn-number);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-bottom: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.card .classificacao .valor:focus{
+    background-color: var(--text);
+    color: var(--title);
+}
+
+.card .classificacao .valor:hover{
+    background-color: var(--btn);
+    color: var(--title);
+}
+
+.card .btn{
+    background-color: var(--btn);
+    height: 45px;
+    width: 360px;
+    border-radius: 25px;
+    border: none;
+    color: var(--title);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.card .btn:hover{
+    background-color: var(--title);
+    color: var(--btn);
+}
+
+/* ----- RESULTADO ----- */
+
+.card.oculto{
+    display: none;
+}
+
+.card.avaliado{
+    align-items: center;
+}
+
+.card.avaliado div{
+    text-align: center;
+}
+
+.card .resultado{
+    background-color: var(--btn-number);
+    color: var(--btn);
+    width: auto;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+}
+
+/* ----- RODAPÉ ----- */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a,
+.attribution a:visited {
+    color: var(--btn);
+}
+
+.attribution a:hover{
+    color: var(--title);
+}

@@ -1,0 +1,8 @@
+:root{
+    --btn: hsl(25, 97%, 53%);
+    --title: hsl(0, 0%, 100%);
+    --text: hsl(217, 12%, 63%);
+    --btn-number: hsl(213, 19%, 18%);
+    --bg-card: hsl(215, 20%, 10%);
+    --bg-body: hsl(216, 12%, 8%);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente de Classificação Interativa</title>
+    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variable.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <main>
+        <section class="card" id="ocultar">
+            <div class="ico"></div>
+            <div>
+                <h1 class="title">Como fizemos?</h1>
+                <p class="description">Por favor, deixe-nos saber como fizemos com sua solicitação de suporte. Todos os comentários são apreciados para nos ajudar a melhorar a nossa oferta!</p>
+            </div>
+            <div>
+                <div class="classificacao">
+                    <li><button class="valor">1</button></li>
+                    <li><button class="valor">2</button></li>
+                    <li><button class="valor">3</button></li>
+                    <li><button class="valor">4</button></li>
+                    <li><button class="valor">5</button></li>
+                </div>
+                <input class="btn enviar" type="submit" value="enviar">
+            </div>
+        </section>
+
+        <section class="card avaliado oculto" id="mostrar">
+            <img src="src/images/illustration-thank-you.png" alt="avaliação">
+            <p class="resultado"></p>
+            <div>
+                <h2 class="title">Obrigado!</h2>
+                <p class="description">Agradecemos que você reserve um tempo para dar uma classificação. Se você precisar de mais suporte, não hesite em entrar em contato! </p>
+            </div>
+            <input class="btn voltar" type="submit" value="voltar">
+        </section>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io/home/my-challenges?tab=completed" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.linkedin.com/in/victorpariziofrontend" target="_blank">Victor Parizio</a>.
+        </div>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
